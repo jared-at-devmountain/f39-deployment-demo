@@ -6,6 +6,10 @@ app.use(express.json())
 
 app.use(express.static(__dirname + '/public'))
 
+app.post('/ma-post', (req, res) => {
+    res.send('ya po0sted!')
+})
+
 app.listen(4000, () => {
     console.log('up on 4000')
 })
